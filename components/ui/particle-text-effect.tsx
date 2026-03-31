@@ -143,12 +143,12 @@ interface ParticleTextEffectProps {
 }
 
 const DEFAULT_WORDS: WordConfig[] = [
-  { text: "CITADEL", color: { r: 255, g: 255, b: 255 } },
-  { text: "Strong", color: { r: 255, g: 0, b: 0 } },
-  { text: "Discipline", color: { r: 0, g: 102, b: 255 } },
-  { text: "Sweat", color: { r: 255, g: 215, b: 0 } },
-  { text: "Excellence", color: { r: 0, g: 200, b: 83 } },
-  { text: "By", color: { r: 255, g: 105, b: 180 } },
+  { text: "rchiclipz", color: { r: 255, g: 255, b: 255 } },
+  { text: "Creative", color: { r: 255, g: 0, b: 0 } },
+  { text: "Reliable", color: { r: 0, g: 102, b: 255 } },
+  { text: "Fast", color: { r: 255, g: 215, b: 0 } },
+  { text: "Strategic", color: { r: 0, g: 200, b: 83 } },
+  { text: "Hire", color: { r: 255, g: 105, b: 180 } },
   { text: "RichardD242", color: { r: 255, g: 255, b: 255 } },
 ];
 

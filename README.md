@@ -1,7 +1,7 @@
 <div align="center">
 
-# Citadel
+# rchiclipz
 
-Stand Unbroken.
+Build with purpose. Launch with impact.
 
 </div>

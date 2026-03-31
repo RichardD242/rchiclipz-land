@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,16 +26,14 @@ export function Header() {
     >
       <div className="flex items-center justify-between transition-all duration-300 px-2 pl-5 py-2">
         {/* Logo */}
-        <Link href="#" className="transition-opacity duration-300 hover:opacity-90">
-          <Image
-            src="/images/citadel-whitelogoblank.png"
-            alt="Citadel"
-            width={220}
-            height={48}
-            priority
-            className="h-8 w-auto"
-          />
-        </Link>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="transition-opacity duration-300 hover:opacity-90 cursor-pointer"
+        >
+          <span className={`text-lg font-semibold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
+            rchiclipz
+          </span>
+        </button>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-10 md:flex">
@@ -44,29 +41,29 @@ export function Header() {
             href="#products"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Products
+            Why Me
           </Link>
           <Link
             href="#technology"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Technology
+            Process
           </Link>
           <Link
             href="#pitch"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Pitch
+            Results
           </Link>
         </nav>
 
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="https://realcitadel-store.vercel.app/"
+            href="#pitch"
             className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${isScrolled ? "bg-foreground text-background hover:opacity-80" : "bg-white text-foreground hover:bg-white/90"}`}
           >
-            Buy the product
+            Hire Me
           </Link>
         </div>
 
@@ -90,28 +87,28 @@ export function Header() {
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
+              Why Me
             </Link>
             <Link
               href="#technology"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Technology
+              Process
             </Link>
             <Link
               href="#pitch"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Pitch
+              Results
             </Link>
             <Link
-              href="https://realcitadel-store.vercel.app/"
+              href="#pitch"
               className="mt-4 bg-foreground px-5 py-3 text-center text-sm font-medium text-background rounded-full"
               onClick={() => setIsMenuOpen(false)}
             >
-              Buy the product
+              Hire Me
             </Link>
           </nav>
         </div>

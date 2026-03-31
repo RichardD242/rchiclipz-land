@@ -6,25 +6,25 @@ import { useEffect, useRef, useState } from "react";
 const sideImages = [
   {
     src: "/images/alpha2.png",
-    alt: "Alpha visual two",
+    alt: "Process visual two",
     position: "left",
     span: 1,
   },
   {
     src: "/images/alpha3.png",
-    alt: "Alpha visual three",
+    alt: "Process visual three",
     position: "left",
     span: 1,
   },
   {
     src: "/images/alpha4.png",
-    alt: "Alpha visual four",
+    alt: "Process visual four",
     position: "right",
     span: 1,
   },
   {
     src: "/images/alpha5.png",
-    alt: "Alpha visual five",
+    alt: "Process visual five",
     position: "right",
     span: 1,
   },
@@ -122,7 +122,7 @@ export function TechnologySection() {
             >
               <Image
                 src="/images/alpha1.png"
-                alt="Alpha visual one"
+                alt="Process visual one"
                 fill
                 className="object-cover"
               />
@@ -133,7 +133,7 @@ export function TechnologySection() {
                 className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
               >
                 <h2 className="max-w-3xl font-medium leading-tight tracking-tight text-white md:text-5xl lg:text-7xl text-5xl">
-                  {["Performance", "Meets", "Excellence"].map((word, index) => {
+                  {["Vision", "Meets", "Execution"].map((word, index) => {
                     // Each word fades out sequentially based on scrollProgress
                     const wordFadeStart = index * 0.07; // Technology: 0, Meets: 0.07, Wilderness: 0.14
                     const wordFadeEnd = wordFadeStart + 0.07;

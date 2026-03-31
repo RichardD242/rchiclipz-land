@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
 
 export function PhilosophySection() {
@@ -66,56 +65,29 @@ export function PhilosophySection() {
               style={{ opacity: titleOpacity }}
             >
               <h2 className="text-[12vw] font-medium leading-[0.95] tracking-tighter text-foreground md:text-[10vw] lg:text-[8vw] text-center px-6">
-                Meet Obsidian and Force.
+                Meet strategy and execution.
               </h2>
             </div>
 
-            {/* Product Grid */}
-            <div className="relative z-10 grid grid-cols-1 gap-4 px-6 md:grid-cols-2 md:px-12 lg:px-20">
-              {/* Obsidian Image - comes from left */}
+            {/* Video Container - blends in as text fades out */}
+            <div className="relative z-10 w-full max-w-4xl mx-auto px-6 md:px-12 lg:px-20">
               <div 
-                className="relative aspect-[4/3] overflow-hidden rounded-2xl"
+                className="relative w-full overflow-hidden rounded-2xl" 
                 style={{
-                  transform: `translate3d(${obsidianTranslateX}%, 0, 0)`,
-                  WebkitTransform: `translate3d(${obsidianTranslateX}%, 0, 0)`,
-                  backfaceVisibility: 'hidden',
-                  WebkitBackfaceVisibility: 'hidden',
+                  opacity: 1 - titleOpacity,
+                  transition: 'opacity 0.3s ease-out',
                 }}
               >
-                <Image
-                  src="/images/image1-logo.png"
-                  alt="Obsidian travel pack"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute bottom-6 left-6">
-                  <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                    Obsidian $299
-                  </span>
-                </div>
-              </div>
-
-              {/* Force Image - comes from right */}
-              <div 
-                className="relative aspect-[4/3] overflow-hidden rounded-2xl"
-                style={{
-                  transform: `translate3d(${forceTranslateX}%, 0, 0)`,
-                  WebkitTransform: `translate3d(${forceTranslateX}%, 0, 0)`,
-                  backfaceVisibility: 'hidden',
-                  WebkitBackfaceVisibility: 'hidden',
-                }}
-              >
-                <Image
-                  src="/images/image2-logo.png"
-                  alt="Force thermal bottle"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute bottom-6 left-6">
-                  <span className="backdrop-blur-md px-4 py-2 text-sm font-medium rounded-full bg-[rgba(255,255,255,0.2)] text-white">
-                    Force $199
-                  </span>
-                </div>
+                <video
+                  autoPlay
+                  muted
+                  playsInline
+                  className="w-full h-auto rounded-2xl bg-black"
+                  style={{ display: titleOpacity > 0.95 ? 'none' : 'block' }}
+                >
+                  <source src="/videos/intro.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
@@ -126,11 +98,11 @@ export function PhilosophySection() {
       <div className="px-6 py-20 md:px-12 md:py-28 lg:px-20 lg:py-36 lg:pb-14">
         <div className="text-center">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">
-            First generation
+            rchiclipz approach
           </p>
           <p className="mt-8 leading-relaxed text-muted-foreground text-3xl text-center">
-            Grind and Grit are precision-engineered gym equipment built for those who demand more.
-            Uncompromising, exclusive, and forged for peak performance.
+            Every project starts with clarity, then moves into design and development with speed.
+            You get intentional visuals, reliable code, and a partner focused on your growth.
           </p>
         </div>
       </div>

@@ -4,21 +4,21 @@ import Link from "next/link";
 
 const footerLinks = {
   explore: [
-    { label: "Products", href: "#products" },
-    { label: "Technology", href: "#technology" },
-    { label: "Pitch", href: "#pitch" },
+    { label: "Why Me", href: "#products" },
+    { label: "Process", href: "#technology" },
+    { label: "Results", href: "#pitch" },
   ],
   about: [
-    { label: "Our Story", href: "#" },
-    { label: "Team", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "About Me", href: "#about" },
+    { label: "Work Style", href: "#technology" },
+    { label: "Client Fit", href: "#products" },
+    { label: "Contact", href: "#pitch" },
   ],
   service: [
-    { label: "FAQ", href: "#" },
-    { label: "Shipping", href: "#" },
-    { label: "Returns", href: "#" },
-    { label: "Warranty", href: "#" },
+    { label: "Discovery", href: "#" },
+    { label: "Design", href: "#" },
+    { label: "Development", href: "#" },
+    { label: "Launch", href: "#" },
   ],
 };
 
@@ -31,10 +31,10 @@ export function FooterSection() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 lg:col-span-2">
             <Link href="/" className="text-lg font-medium text-foreground">
-              CITADEL
+              rchiclipz
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology.
+              Personal landing page for client work. I help brands launch high-impact digital experiences with clear strategy and clean execution.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export function FooterSection() {
       <div className="border-t border-border px-6 py-6 md:px-12 lg:px-20">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-xs text-muted-foreground">
-            2026 CITADEL. All rights reserved.
+            2026 rchiclipz. All rights reserved.
           </p>
 
           

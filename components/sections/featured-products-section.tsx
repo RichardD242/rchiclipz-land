@@ -4,33 +4,33 @@ import { FadeImage } from "@/components/fade-image";
 
 const features = [
   {
-    title: "Cold, Clean Aesthetic. Zero Compromise.",
+    title: "Clean visual direction tailored to your brand.",
     description: "Design",
     image: "/images/tech1.png",
   },
   {
-    title: "Built for Decades of Heavy Use.",
-    description: "Durability",
+    title: "Production-ready builds with scalable foundations.",
+    description: "Build Quality",
     image: "/images/tech2.png",
   },
   {
-    title: "Limited Production. Unmatched Quality.",
-    description: "Exclusivity",
+    title: "Focused client collaboration from kickoff to launch.",
+    description: "Collaboration",
     image: "/images/tech3.png",
   },
   {
-    title: "Optimized for Maximum Output.",
+    title: "Performance-first pages tuned for conversions.",
     description: "Performance",
     image: "/images/tech4.png",
   },
   {
-    title: "Engineered to Exact Tolerances.",
+    title: "Precision implementation with modern tooling.",
     description: "Precision",
     image: "/images/tech5.png",
   },
   {
-    title: "Premium-Grade Steel Construction.",
-    description: "Strength",
+    title: "Dependable delivery, iteration, and long-term support.",
+    description: "Reliability",
     image: "/images/tech6.png",
   },
 ];
@@ -41,12 +41,12 @@ export function FeaturedProductsSection() {
       {/* Section Title */}
       <div className="px-6 py-20 text-center md:px-12 md:py-28 lg:px-20 lg:py-32 lg:pb-20">
         <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl lg:text-5xl">
-          Engineered for Performance.
+          Why clients hire
           <br />
-          Designed for Excellence
+          rchiclipz
         </h2>
         <p className="mx-auto mt-6 max-w-md text-sm text-muted-foreground">
-          Technology
+          Core strengths
         </p>
       </div>
 

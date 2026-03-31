@@ -54,7 +54,7 @@ function FloatingPaths({ position }: { position: number }) {
 export function BackgroundPaths() {
     const sectionRef = useRef<HTMLDivElement>(null);
     const [scrollOpacity, setScrollOpacity] = useState(1);
-    const word = "CITADEL";
+    const word = "rchiclipz";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -91,7 +91,7 @@ export function BackgroundPaths() {
                     transition={{ duration: 2 }}
                     className="max-w-4xl mx-auto"
                 >
-                    <h1 className="text-7xl sm:text-9xl md:text-[10rem] lg:text-[12rem] font-bold mb-8 tracking-tighter text-white">
+                    <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-10xl font-bold mb-8 tracking-tighter text-white">
                         {word.split("").map((letter, letterIndex) => (
                             <motion.span
                                 key={letterIndex}
@@ -117,21 +117,15 @@ export function BackgroundPaths() {
                     >
                         <Button
                             variant="ghost"
-                            className="rounded-[1.15rem] px-8 py-6 text-lg font-semibold backdrop-blur-md 
+                            className="rounded-[1.15rem] px-6 py-6 text-2xl font-semibold backdrop-blur-md 
                             bg-white/10 hover:bg-white/20 border border-white/20
                             text-white transition-all duration-300 
-                            group-hover:-translate-y-0.5
+                            group-hover:translate-y-2
                             hover:shadow-md"
-                            onClick={() => window.location.href = 'https://realcitadel-store.vercel.app/'}
+                            onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
                         >
                             <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                                Discover Excellence
-                            </span>
-                            <span
-                                className="ml-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1.5 
-                                transition-all duration-300"
-                            >
-                                →
+                                scroll down ↓
                             </span>
                         </Button>
                     </div>

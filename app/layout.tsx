@@ -7,13 +7,9 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'The Citadel',
-  description: 'High-performance outdoor gear engineered for the modern explorer. Lightweight, durable, adventure-ready.',
+  title: 'rchiclipz | Creative Developer',
+  description: 'Landing page for rchiclipz showcasing why clients hire me, what I deliver, and how I build fast, high-impact digital work.',
   generator: 'v0.app',
-  icons: {
-    icon: '/citadelLOGO.png',
-    apple: '/citadelLOGO.png',
-  },
 }
 
 export default function RootLayout({
