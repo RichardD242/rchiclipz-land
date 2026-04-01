@@ -3,80 +3,28 @@
 import Link from "next/link";
 
 const footerLinks = {
-  explore: [
+  menu: [
     { label: "Why Me", href: "#products" },
     { label: "Process", href: "#technology" },
-    { label: "Results", href: "#pitch" },
-  ],
-  about: [
-    { label: "About Me", href: "#about" },
-    { label: "Work Style", href: "#technology" },
-    { label: "Client Fit", href: "#products" },
-    { label: "Contact", href: "#pitch" },
-  ],
-  service: [
-    { label: "Discovery", href: "#" },
-    { label: "Design", href: "#" },
-    { label: "Development", href: "#" },
-    { label: "Launch", href: "#" },
+    { label: "End", href: "#pitch" },
   ],
 };
 
 export function FooterSection() {
   return (
     <footer className="bg-background">
-      {/* Main Footer Content */}
       <div className="border-t border-border px-6 py-16 md:px-12 md:py-20 lg:px-20">
-        <div className="grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-5">
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-1 lg:col-span-2">
+        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+          <div>
             <Link href="/" className="text-lg font-medium text-foreground">
               rchiclipz
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Personal landing page for client work. I help brands launch high-impact digital experiences with clear strategy and clean execution.
-            </p>
           </div>
 
-          {/* Explore */}
           <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">Explore</h4>
+            <h4 className="mb-4 text-sm font-medium text-foreground">Menu</h4>
             <ul className="space-y-3">
-              {footerLinks.explore.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* About */}
-          <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">About</h4>
-            <ul className="space-y-3">
-              {footerLinks.about.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Service */}
-          <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">Service</h4>
-            <ul className="space-y-3">
-              {footerLinks.service.map((link) => (
+              {footerLinks.menu.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -93,34 +41,10 @@ export function FooterSection() {
 
       {/* Bottom Bar */}
       <div className="border-t border-border px-6 py-6 md:px-12 lg:px-20">
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="flex items-center justify-center">
           <p className="text-xs text-muted-foreground">
             2026 rchiclipz. All rights reserved.
           </p>
-
-          
-
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Instagram
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Twitter
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              YouTube
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

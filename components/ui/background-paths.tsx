@@ -110,6 +110,10 @@ export function BackgroundPaths() {
                         ))}
                     </h1>
 
+                    <p className="mb-10 text-xl font-medium tracking-wide text-white/85 sm:text-2xl">
+                        Video Editor
+                    </p>
+
                     <div
                         className="inline-block group relative bg-gradient-to-b from-white/10 to-black/10 
                         p-px rounded-2xl backdrop-blur-lg 

@@ -53,14 +53,14 @@ export function Header() {
             href="#pitch"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Results
+            End
           </Link>
         </nav>
 
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="#pitch"
+            href="/hire-me"
             className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${isScrolled ? "bg-foreground text-background hover:opacity-80" : "bg-white text-foreground hover:bg-white/90"}`}
           >
             Hire Me
@@ -101,10 +101,10 @@ export function Header() {
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Results
+              End
             </Link>
             <Link
-              href="#pitch"
+              href="/hire-me"
               className="mt-4 bg-foreground px-5 py-3 text-center text-sm font-medium text-background rounded-full"
               onClick={() => setIsMenuOpen(false)}
             >

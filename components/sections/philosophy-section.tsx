@@ -65,7 +65,7 @@ export function PhilosophySection() {
               style={{ opacity: titleOpacity }}
             >
               <h2 className="text-[12vw] font-medium leading-[0.95] tracking-tighter text-foreground md:text-[10vw] lg:text-[8vw] text-center px-6">
-                Meet strategy and execution.
+                Introduction Video.
               </h2>
             </div>
 
@@ -101,8 +101,8 @@ export function PhilosophySection() {
             rchiclipz approach
           </p>
           <p className="mt-8 leading-relaxed text-muted-foreground text-3xl text-center">
-            Every project starts with clarity, then moves into design and development with speed.
-            You get intentional visuals, reliable code, and a partner focused on your growth.
+            I start by learning your style, audience, and goals. Then I edit fast, communicate clearly,
+            and deliver polished videos that help your channel grow.
           </p>
         </div>
       </div>

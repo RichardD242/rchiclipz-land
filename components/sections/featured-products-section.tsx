@@ -4,34 +4,34 @@ import { FadeImage } from "@/components/fade-image";
 
 const features = [
   {
-    title: "Clean visual direction tailored to your brand.",
-    description: "Design",
-    image: "/images/tech1.png",
+    title: "Edits that match your channel style and feel like your brand.",
+    description: "Style Match",
+    image: "/images/lara1.png",
   },
   {
-    title: "Production-ready builds with scalable foundations.",
-    description: "Build Quality",
-    image: "/images/tech2.png",
+    title: "Fast turnaround without sacrificing quality.",
+    description: "Speed + Quality",
+    image: "/images/lara2.png",
   },
   {
-    title: "Focused client collaboration from kickoff to launch.",
-    description: "Collaboration",
-    image: "/images/tech3.png",
+    title: "Clear communication, quick updates, and easy feedback rounds.",
+    description: "Communication",
+    image: "/images/lara3.png",
   },
   {
-    title: "Performance-first pages tuned for conversions.",
-    description: "Performance",
-    image: "/images/tech4.png",
+    title: "Strong pacing and storytelling that keep viewers watching.",
+    description: "Retention Focus",
+    image: "/images/lara4.png",
   },
   {
-    title: "Precision implementation with modern tooling.",
-    description: "Precision",
-    image: "/images/tech5.png",
+    title: "Clean cuts, polished sound, and attention to detail.",
+    description: "Polish",
+    image: "/images/lara5.png",
   },
   {
-    title: "Dependable delivery, iteration, and long-term support.",
-    description: "Reliability",
-    image: "/images/tech6.png",
+    title: "Reliable delivery you can count on every upload.",
+    description: "Consistency",
+    image: "/images/lara6.png",
   },
 ];
 
@@ -46,7 +46,7 @@ export function FeaturedProductsSection() {
           rchiclipz
         </h2>
         <p className="mx-auto mt-6 max-w-md text-sm text-muted-foreground">
-          Core strengths
+          6 Core strengths
         </p>
       </div>
 
